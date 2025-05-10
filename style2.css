@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navbar{
+    background-color:#333;
+    overflow: hidden;
+}
+.nav a{
+    list-style: none;
+    text-decoration: none;
+    
+    float: right;
+    color: white;
+    padding: 14px 16px;
+    text-align: center;
+    font-size: 17px;
+}
+.navbar a:not(:last-child):hover{
+background-color: white;
+color: black;
+}
+.nav a.active{
+    background-color: white;
+    color: black;
+}
+.icon img{
+    width: 7%;
+    height: auto;
+    }
+.icon{
+    display: none;
+    
+}
+@media screen and (max-width:720px) {
+    .navbar a:not(:last-child){
+        display: none;
+    }
+    .navbar .icon{
+        display: block !important;
+        float: right;
+        flex-direction: row-reverse;
+    }
+}
+.hero img{
+    width: 100%;
+    height: 400px;
+}
+#ourlist{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 50%;
+    border-collapse: collapse;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+#ourlist td, #ourlist th{
+    border: 1px solid #ddd;
+padding: 0px;
+}
+#ourlist th{
+    background-color: green;
+    color: white;
+    text-align: left;
+    padding-top: 12px;
+    padding-left: 12px;
+}
+#ourlist tr:nth-last-child(even){
+    background-color: #f2f2f2;
+}
+#ourlist tr:hover{
+    background-color: #ddd;
+}

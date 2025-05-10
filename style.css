@@ -1,0 +1,60 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+.navbar{
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    
+}
+.navbar ul{
+    list-style: none;
+    margin-left: 30px;
+    float: right;
+}
+.nav a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+.nav li{
+    display: inline-block ;
+    padding: 3px;
+    
+}
+.logo{
+    width: 15%;
+    height: auto;
+    border-radius: 50%;
+    /* padding-left: 100px; */
+}
+.navbar .logo{
+    width: 5%;
+    height: auto;
+}
+.toggle img{
+    padding-top: 15px;
+    height: auto;
+    border-radius: 30%;
+
+}
+.toggle{
+    padding: 150px;
+}
+.toggle{
+    display: none;
+}
+@media (max-width:700px) {
+    .nav{
+        display: none;
+    }
+    .toggle{
+        display: block;
+    }
+    .logo{width: 50px; 
+    }
+}
+
